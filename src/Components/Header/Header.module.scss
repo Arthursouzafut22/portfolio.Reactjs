@@ -1,0 +1,58 @@
+@mixin flex($options) {
+  display: flex;
+  align-items: center;
+  justify-content: $options;
+}
+
+.header {
+  background-color: #2c2446;
+  padding: 25px 20px;
+
+  nav {
+    @include flex(space-between);
+    max-width: 1250px;
+    margin: 0 auto;
+
+    .wrapperLogo {
+      @include flex(initial);
+
+      a {
+        font-size: 17px;
+      }
+    }
+
+    .wrapper2 {
+      @include flex(initial);
+      gap: 25px;
+
+      span {
+        @include flex(initial);
+        gap: 4px;
+
+        a {
+          font-size: 17px;
+          transition: 0.3s all;
+
+          &:hover {
+            color: #804edd;
+          }
+        }
+      }
+      button {
+        font-size: 16px;
+        display: block;
+        color: #ffffff;
+        background-color: #804edd;
+        border: none;
+        padding: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s all;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
