@@ -12,6 +12,7 @@
   isolation: isolate;
   max-width: 152px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .codepenbutton::before {
@@ -49,4 +50,5 @@
   background: #804edd;
   border-radius: 8px;
   height: 100%;
+  text-wrap: nowrap;
 }
