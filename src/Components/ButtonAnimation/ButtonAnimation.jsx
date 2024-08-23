@@ -4,7 +4,7 @@ const ButtonAnimation = () => {
   const scrollEmail = (event) => {
     event.preventDefault();
     window.scrollTo({
-      top: 1000,
+      top: window.innerHeight + 600,
       left: 100,
       behavior: "smooth",
     });
