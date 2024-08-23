@@ -1,0 +1,54 @@
+.section {
+  max-width: 1250px;
+  padding: 0 1.25rem;
+  margin: 60px auto 60px auto;
+}
+.section span {
+  font-size: 1.125rem;
+  text-align: center;
+  display: block;
+  color: #804edd;
+}
+.section h1 {
+  font-size: 1.88rem;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 8px;
+}
+.section form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2c2446;
+  max-width: 28.13rem;
+  padding: 0.9375rem 0.75rem;
+  margin: 15px auto auto auto;
+  border-radius: 0.5rem;
+}
+.section form textarea {
+  font-size: 1.06rem;
+  display: block;
+  width: 100%;
+  color: #9ca3af;
+  background-color: #181028;
+  padding: 0.75rem;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+.section form textarea:focus:hover {
+  outline: 2px solid #804edd;
+}
+.section form button {
+  font-size: 1.06rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #804edd;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 6px;
+}/*# sourceMappingURL=FormContato.module.css.map */

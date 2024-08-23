@@ -1,0 +1,11 @@
+.footer {
+  margin-bottom: 10px;
+}
+.footer p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1875rem;
+  color: #9ca3af;
+}/*# sourceMappingURL=Footer.module.css.map */

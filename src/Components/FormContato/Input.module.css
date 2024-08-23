@@ -1,0 +1,19 @@
+.input {
+  font-size: 1.06rem;
+  display: block;
+  width: 100%;
+  color: #9ca3af;
+  background-color: #181028;
+  padding: 0.75rem;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+.input:focus:hover {
+  outline: 2px solid #804edd;
+}
+
+.error {
+  border: 2px solid red;
+}/*# sourceMappingURL=Input.module.css.map */

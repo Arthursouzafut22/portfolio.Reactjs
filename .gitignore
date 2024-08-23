@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src\Components\Header\Header.module.css.map
+src\Components\Footer\Footer.module.css.map
+src\Components\Main\Main.module.css.map
+src\Components\Projectss\Projects.module.css.map
+src\Components\Redes\Redes.module.css.map
+src\Components\FormContato\FormContato.module.css.map
+src\Components\FormContato\Input.module.css.map
+src\Components\ButtonAnimation\ButtonAnimation.module.css.map
+src\Components\Knowledge\Knowledge.module.css.map

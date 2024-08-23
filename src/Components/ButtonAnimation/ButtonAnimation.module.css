@@ -1,0 +1,54 @@
+.codepenbutton {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 25px auto auto auto;
+  position: relative;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 2px;
+  font-weight: 600;
+  isolation: isolate;
+  max-width: 152px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.codepenbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg, #d1d1d1, rgba(2, 54, 123, 0.2862745098), #a7bfde);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop 0.75s linear infinite;
+  animation-play-state: running;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepenbutton:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+.codepenbutton span {
+  font-size: 0.9375rem;
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  background: #804edd;
+  border-radius: 8px;
+  height: 100%;
+  text-wrap: nowrap;
+}/*# sourceMappingURL=ButtonAnimation.module.css.map */

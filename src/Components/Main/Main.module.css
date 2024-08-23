@@ -1,0 +1,23 @@
+.main {
+  max-width: 1250px;
+  margin: 40px auto 90px auto;
+  padding: 0 1.25rem;
+}
+.main h1 {
+  font-size: clamp(1.5625rem, 4vw, 2.5rem);
+  text-align: center;
+  color: #ffffff;
+  max-width: 53.13rem;
+  width: 100%;
+  margin: 0 auto;
+  text-wrap: wrap;
+}
+.main h1 span {
+  color: #804edd;
+}
+.main p {
+  text-align: center;
+  max-width: 25rem;
+  color: #ffffff;
+  margin: 0 auto;
+}/*# sourceMappingURL=Main.module.css.map */
