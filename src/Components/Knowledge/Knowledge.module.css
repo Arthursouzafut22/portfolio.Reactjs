@@ -23,11 +23,14 @@
 .section .wrapper div {
   display: flex;
   flex-direction: column;
+  border: 2px solid transparent;
   align-items: center;
   width: clamp(12.5rem, 4vw, 18.75rem);
   background: #804edd;
-  color: #ffffff;
   padding: 0.625rem;
   border-radius: 0.5rem;
   flex: 1;
+}
+.section .wrapper div p {
+  color: #ffffff;
 }/*# sourceMappingURL=Knowledge.module.css.map */

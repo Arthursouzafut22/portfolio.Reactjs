@@ -12,7 +12,7 @@ const Knowledge = () => {
             skills.map((skil, index) => (
               <div key={index}>
                 {skil.skill}
-                {skil.name}
+                <p>{skil.name}</p>
               </div>
             ))}
         </div>

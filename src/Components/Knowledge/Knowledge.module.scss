@@ -28,13 +28,17 @@ $colorWhite: #ffffff;
     div {
       display: flex;
       flex-direction: column;
+      border: 2px solid transparent;
       align-items: center;
       width: clamp(12.5rem, 4vw, 18.75rem);
       background: $purpleColor;
-      color: $colorWhite;
       padding: 0.625rem;
       border-radius: 0.5rem;
       flex: 1;
+
+      p {
+        color: $colorWhite;
+      }
     }
   }
 }
