@@ -1,25 +1,47 @@
 .section {
-  max-width: 1250px;
   padding: 0 1.25rem;
   margin: 20px auto auto auto;
 }
-.section p {
+.section .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.section .container .contlink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section .container .contlink a {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  gap: 3px;
+  background-color: #804edd;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: 0.3s all;
+}
+.section .container .contlink a:hover {
+  opacity: 0.7;
+}
+.section .container p {
   font-size: 1.125rem;
   color: #804edd;
 }
-.section h1 {
+.section .container h1 {
   font-size: 1.88rem;
   color: #ffffff;
   margin-top: 8px;
 }
-.section .wrapper {
+.section .container .wrapper {
   display: flex;
   align-items: center;
+  justify-content: initial;
   flex-wrap: wrap;
   gap: 1.25rem;
   margin: 18px 0px;
 }
-.section .wrapper .card {
+.section .container .wrapper .card {
   background-color: #2c2446;
   width: 18.75rem;
   max-width: 100%;
@@ -27,21 +49,21 @@
   border-radius: 0.5rem;
   flex: 1 1 18.75rem;
 }
-.section .wrapper .card img {
+.section .container .wrapper .card img {
   display: block;
   max-width: 100%;
   border-radius: 0.5rem;
 }
-.section .wrapper .card h2 {
+.section .container .wrapper .card h2 {
   text-align: center;
   color: #ffffff;
   margin-top: 8px;
 }
-.section .wrapper .card p {
+.section .container .wrapper .card p {
   font-size: 0.9375rem;
   color: #ffffff;
 }
-.section .wrapper .card a {
+.section .container .wrapper .card a {
   text-align: center;
   display: block;
   background-color: #eab308;
