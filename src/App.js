@@ -1,13 +1,13 @@
-import Header from "./Components/Header/Header";
-import Main from "./Components/Main/Main";
+import RoutesGlobal from "./Routes/Routes";
+import Footer from "./Components/Footer/Footer";
 
-function App() {
+const App = () => {
   return (
     <>
-      <Header />
-      <Main/>
+      <RoutesGlobal />
+      <Footer />
     </>
   );
-}
+};
 
 export default App;

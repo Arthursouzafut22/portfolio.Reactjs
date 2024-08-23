@@ -3,14 +3,14 @@ $colorWhite: #ffffff;
 
 .main {
   max-width: 1250px;
-  margin: 40px auto auto auto;
-  padding: 0px 20px;
+  margin: 40px auto 90px auto;
+  padding: 0 1.25rem;
 
   h1 {
-    font-size: clamp(25px, 4vw, 40px);
+    font-size: clamp(1.5625rem, 4vw, 2.5rem);
     text-align: center;
     color: $colorWhite;
-    max-width: 850px;
+    max-width: 53.13rem;
     width: 100%;
     margin: 0 auto;
     text-wrap: wrap;
@@ -22,7 +22,7 @@ $colorWhite: #ffffff;
 
   p {
     text-align: center;
-    max-width: 400px;
+    max-width: 25rem;
     color: $colorWhite;
     margin: 0 auto;
   }

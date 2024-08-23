@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../Header/Header.module.scss";
 import Button from "../Button/Button";
 import { FaHashtag } from "react-icons/fa";
@@ -15,7 +16,7 @@ const Header = () => {
             <MdOutlineArrowBackIos
               style={{ color: "#804EDD", fontSize: "1.5625rem" }}
             />
-            <a href="/">Arthur</a>
+            <Link to="/">Arthur</Link>
             <MdOutlineArrowForwardIos
               style={{ color: "#804EDD", fontSize: "1.5625rem" }}
             />
@@ -23,7 +24,7 @@ const Header = () => {
           <div className={styles.wrapper2}>
             <span>
               <FaHashtag style={{ color: "#804EDD" }} />
-              <a href="/">Projetos</a>
+              <Link to="/projetos">Projetos</Link>
             </span>
             <Button>Baixar CV</Button>
           </div>
