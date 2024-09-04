@@ -26,7 +26,9 @@ const Header = () => {
               <FaHashtag style={{ color: "#804EDD" }} />
               <Link to="/projetos">Projetos</Link>
             </span>
-            <Button>Baixar CV</Button>
+            <a href="assets/Currículo.pdf" download="Seu-Curriculo.pdf" className={styles.pdf}>
+              Baixar CV
+            </a>
           </div>
         </nav>
       </header>
