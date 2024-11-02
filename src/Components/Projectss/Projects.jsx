@@ -1,7 +1,10 @@
 import styles from "../Projectss/Projects.module.scss";
 import { FaArrowLeft } from "react-icons/fa";
+import OptimizeImage from "../OptimizeImage/OptimizeImage";
 import { cardsInfo } from "./Myprojects";
 import { Link } from "react-router-dom";
+import { Suspense } from "react";
+import Loader from "../Loader/Loader";
 
 const Projects = () => {
   return (
@@ -21,7 +24,13 @@ const Projects = () => {
             {cardsInfo.length > 0 &&
               cardsInfo.map(({ id, img, title, description, url }) => (
                 <div key={id} className={styles.card}>
-                  <img src={img} alt={title} loading="lazy" />
+                  <Suspense fallback={<Loader />}>
+                    <OptimizeImage
+                      src={img}
+                      alt={title}
+                      fallback={<Loader />}
+                    />
+                  </Suspense>
                   <h2>{title}</h2>
                   <p>{description}</p>
                   <a href={url} target="_blank" rel="noopener noreferrer">

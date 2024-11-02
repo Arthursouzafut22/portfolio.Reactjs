@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "../Header/Header.module.scss";
-import Button from "../Button/Button";
 import { FaHashtag } from "react-icons/fa";
 import {
   MdOutlineArrowBackIos,
@@ -26,7 +25,11 @@ const Header = () => {
               <FaHashtag style={{ color: "#804EDD" }} />
               <Link to="/projetos">Projetos</Link>
             </span>
-            <a href="assets/Currículo.pdf" download="Seu-Curriculo.pdf" className={styles.pdf}>
+            <a
+              href="assets/Currículo.pdf"
+              download="Seu-Curriculo.pdf"
+              className={styles.pdf}
+            >
               Baixar CV
             </a>
           </div>

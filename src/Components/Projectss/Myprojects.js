@@ -7,7 +7,6 @@ import blog from "./assets/blog.png";
 import landPage from "./assets/ladPage.png";
 import filterJobs from "./assets/filterJobs.png";
 import pizzaFood from "./assets/pizza.food.png";
-import searchImagem from "./assets/serachImagem.png";
 import PaginaVendas from "./assets/pagianVendas.png";
 import sitePiza from "./assets/sitePizza.png";
 
