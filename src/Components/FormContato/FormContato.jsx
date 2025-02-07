@@ -73,4 +73,3 @@ const FormContato = () => {
 };
 
 export default FormContato;
-// {status ? <Spinner /> : "Enviar mensagem"}

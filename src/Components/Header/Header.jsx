@@ -26,7 +26,7 @@ const Header = () => {
               <Link to="/projetos">Projetos</Link>
             </span>
             <a
-              href="assets/Currículo.pdf"
+              href="assets/arthur-curriculo.pdf"
               download="Seu-Curriculo.pdf"
               className={styles.pdf}
             >
