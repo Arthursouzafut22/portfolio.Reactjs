@@ -1,31 +1,29 @@
 import ecomerce from "./assets/eccormercce.png";
 import HostPlataform from "./assets/Hostplataform.png";
 import sistemaFood from "./assets/sistemaFood.png";
-import LoginUser from "./assets/loginUser.png";
 import rastreadorIp from "./assets/rastreador.ip.png";
-import blog from "./assets/blog.png";
 import landPage from "./assets/ladPage.png";
-import filterJobs from "./assets/filterJobs.png";
-import pizzaFood from "./assets/pizza.food.png";
-import PaginaVendas from "./assets/pagianVendas.png";
-import sitePiza from "./assets/sitePizza.png";
+import vapeShope from "./assets/vape-shope.png";
+import AluguelImoveis from "./assets/aluguel.png";
+import Comentarios from "./assets/comments.png";
+import DevJobs from "./assets/dev-jobs.png";
 
 export const cardsInfo = [
   {
     id: 1,
-    img: `${ecomerce}`,
-    title: "Ecommerce",
+    img: `${vapeShope}`,
+    title: "Vape Shope",
     description:
-      "E-commerce é um site de vendas com interface moderna, permitindo aos usuários explorar produtos, selecionar quantidades e adicionar itens ao carrinho de forma fácil e intuitiva com roteamento de rotas.",
-    url: "https://github.com/Arthursouzafut22/fetchShop",
+      "Vape Shop é um e-commerce para vapers e cigarros eletrônicos, oferecendo navegação intuitiva, exibição de produtos e pagamentos integrados para uma experiência de compra moderna.",
+    url: "https://github.com/Arthursouzafut22/vape-shop",
   },
   {
     id: 2,
-    img: `${HostPlataform}`,
-    title: "Host Plataforma",
+    img: `${AluguelImoveis}`,
+    title: "PropertyPulse",
     description:
-      "Host Plataforma é uma solução de hospedagem de internet que facilita o gerenciamento de domínios e servidores, oferecendo recursos avançados e segurança para sites de todos os tamanhos.",
-    url: "https://host-platform.vercel.app/",
+      "PropertyPulse é uma plataforma inovadora para cadastro e aluguel de imóveis, proporcionando uma experiência intuitiva para locadores e locatários, com gestão de transações e autenticação via Google.",
+    url: "https://github.com/Arthursouzafut22/aluguel-imoveis",
   },
   {
     id: 3,
@@ -37,35 +35,35 @@ export const cardsInfo = [
   },
   {
     id: 4,
-    img: `${LoginUser}`,
-    title: "Login User",
+    img: `${ecomerce}`,
+    title: "Ecommerce",
     description:
-      "Login User é um sistema de autenticação que oferece uma interface simples e segura para usuários acessarem suas contas, com suporte a verificação e criação de senha e usúarios com verificação de dados.",
-    url: "https://login-user-reactjs.vercel.app/login",
+      "E-commerce é um site de vendas com interface moderna, permitindo aos usuários explorar produtos, selecionar quantidades e adicionar itens ao carrinho de forma fácil e intuitiva com roteamento de rotas.",
+    url: "https://github.com/Arthursouzafut22/fetchShop",
   },
   {
     id: 5,
-    img: `${rastreadorIp}`,
-    title: "Rastreador IP",
+    img: `${Comentarios}`,
+    title: "Comentários interativos",
     description:
-      "Rastreador IP é uma ferramenta que permite localizar e obter informações detalhadas sobre endereços IP, ajudando na análise de localização geográfica e segurança de rede utilizei api API IP Geolocation da IPify.",
-    url: "https://cozy-choux-4a09af.netlify.app/",
+      "Um sistema de comentários interativos onde usuários podem gerenciar comentários e respostas, votar positivamente ou negativamente, e oferecer uma experiência dinâmica.",
+    url: "https://interactive-comments-d26l.vercel.app/",
   },
   {
     id: 6,
-    img: `${blog}`,
-    title: "Blog notícias",
+    img: `${HostPlataform}`,
+    title: "Host Plataforma",
     description:
-      "Utilizando API News API https://newsapi.org/ criei um aplicativo de notícias que fornece acesso a uma ampla variedade de fontes de notícias e conteúdo atualizado em tempo real em 24 horas em todo mundo.",
-    url: "https://github.com/Arthursouzafut22/blog.News",
+      "Host Plataforma é uma solução de hospedagem de internet que facilita o gerenciamento de domínios e servidores, oferecendo recursos avançados e segurança para sites de todos os tamanhos.",
+    url: "https://host-platform.vercel.app/",
   },
   {
     id: 7,
-    img: `${filterJobs}`,
-    title: "Filtrar empregos",
+    img: `${DevJobs}`,
+    title: "Devjobs",
     description:
-      "Filtrar Empregos é uma aplicação que permite aos usuários buscar e filtrar oportunidades de trabalho com base em critérios personalizados, facilitando a busca por vagas relevantes.",
-    url: "https://incomparable-centaur-f5c1c3.netlify.app/",
+      "Um sistema de listagem de empregos onde usuários podem filtrar vagas por título, local e tipo de contrato, além de visualizar detalhes e se candidatar.",
+    url: "https://devjobs-app-eta.vercel.app/",
   },
   {
     id: 8,
@@ -77,26 +75,10 @@ export const cardsInfo = [
   },
   {
     id: 9,
-    img: `${pizzaFood}`,
-    title: "Carrinho de compras",
+    img: `${rastreadorIp}`,
+    title: "Rastreador IP",
     description:
-      "Carrinho de Compras Pizza Food é uma funcionalidade que permite aos clientes selecionar pizzas, ajustar quantidades e gerenciar itens de forma prática.",
-    url: "https://joyful-trifle-4e8a99.netlify.app/",
-  },
-  {
-    id: 10,
-    img: `${PaginaVendas}`,
-    title: "Pagina de vendas",
-    description:
-      "Este projeto é uma página de vendas dinâmica e interativa, projetada para oferecer uma experiência de compra online fluida. Os usuários podem selecionar facilmente a quantidade desejada de um produto e adicioná-lo ao carrinho de compras.Além disso, o sistema de carrinho permite que os usuários revisem suas seleções antes de procederem ao checkout.",
-    url: "https://coruscating-pika-d90d04.netlify.app/",
-  },
-  {
-    id: 10,
-    img: `${sitePiza}`,
-    title: "Projeto",
-    description:
-      "Restaurante tem um design de modelo de restaurante que é limpo e moderno. É especialmente projetado para restaurantes, cafés, intuitivo para os usúarios cafeterias e qualquer site relacionado a catering. Este modelo de site de alimentos foi desenvolvido com as mais recentes tecnologias da web, como HTML5, CSS3 e Javascript.",
-    url: "https://animated-yeot-333ca6.netlify.app/",
+      "Rastreador IP é uma ferramenta que permite localizar e obter informações detalhadas sobre endereços IP, ajudando na análise de localização geográfica e segurança de rede utilizei api API IP Geolocation da IPify.",
+    url: "https://cozy-choux-4a09af.netlify.app/",
   },
 ];

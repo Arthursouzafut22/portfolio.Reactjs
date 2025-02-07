@@ -1,23 +1,39 @@
 import styles from "../FormContato/FormContato.module.scss";
-import Input from "./Input";
+import Input from "../Input/Input";
 import Button from "../Button/Button";
-import UseForm from "../../Hooks/UseForm";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import Toast from "../Toast/Toast";
+import Spinner from "../Spinner/Spinner";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { schema } from "./Schema/Schema";
 
 const FormContato = () => {
-  const {
-    nome,
-    email,
-    mensagem,
-    error,
-    validateForms,
-    setNome,
-    setEmail,
-    setMensagem,
-  } = UseForm();
+  const [status, setStatus] = useState(false);
+  const { register, handleSubmit, setValue } = useForm({
+    resolver: yupResolver(schema),
+  });
 
-  const submitForms = (e) => {
-    e.preventDefault();
-    validateForms();
+  const submitForms = async (data) => {
+    const templeteParams = {
+      from_name: data.nome,
+      email: data.email,
+      mensagem: data.mensagem,
+    };
+    setStatus(true);
+    await emailjs.send(
+      "service_f0c7pnf",
+      "template_wv97qnh",
+      templeteParams,
+      "HmzCXjEDG2wKJAZMw"
+    );
+    setStatus(false);
+    setValue("nome", "");
+    setValue("email", "");
+    setValue("mensagem", "");
+    toast.success("Email enviado com sucesso!");
   };
 
   return (
@@ -28,42 +44,33 @@ const FormContato = () => {
           Vamos trabalhar juntos?
           <br /> Entre em contato
         </h1>
-        <form onSubmit={submitForms}>
+        <form onSubmit={handleSubmit(submitForms)}>
           <Input
             type="text"
-            name="nome"
-            value={nome}
+            {...register("nome", { required: true })}
             id="nome"
             placeholder="Nome"
-            onChange={({ target }) => setNome(target.value)}
-            error={error}
           />
           <Input
             type="text"
-            name="email"
-            value={email}
+            {...register("email", { required: true })}
             id="email"
             placeholder="E-mail"
-            onChange={({ target }) => setEmail(target.value)}
           />
           <textarea
-            name="mensagem"
-            value={mensagem}
+            {...register("mensagem", { required: true })}
             id="msg"
             placeholder="Mensagem"
             rows={5}
-            onChange={({ target }) => setMensagem(target.value)}
           ></textarea>
-          {error && (
-            <p style={{ color: "red", margin: "0px", fontSize: "15px" }}>
-              {error}
-            </p>
-          )}
-          <Button>Enviar mensagem</Button>
+
+          <Button>{status ? <Spinner /> : "Enviar mensagem"}</Button>
         </form>
+        <Toast />
       </section>
     </>
   );
 };
 
 export default FormContato;
+// {status ? <Spinner /> : "Enviar mensagem"}

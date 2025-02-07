@@ -51,6 +51,7 @@ $colorWhite: #ffffff;
     button {
       font-size: 1.06rem;
       padding: 0.75rem;
+      // height: 35px;
       border-radius: 0.5rem;
       background-color: $purpleColor;
       color: $colorWhite;
@@ -58,6 +59,9 @@ $colorWhite: #ffffff;
       cursor: pointer;
       width: 100%;
       margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

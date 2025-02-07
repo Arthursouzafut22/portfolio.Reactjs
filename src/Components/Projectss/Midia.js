@@ -10,6 +10,7 @@ import pizzaFood from "./assets/pizza.food.png";
 import searchImagem from "./assets/serachImagem.png";
 import PaginaVendas from "./assets/pagianVendas.png";
 import sitePiza from "./assets/sitePizza.png";
+import vapeShope from "./assets/vape-shope.png";
 
 export {
   ecomerce,
@@ -23,5 +24,6 @@ export {
   pizzaFood,
   searchImagem,
   PaginaVendas,
-  sitePiza
+  sitePiza,
+  vapeShope
 };

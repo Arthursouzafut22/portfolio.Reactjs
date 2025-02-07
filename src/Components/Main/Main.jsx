@@ -8,14 +8,13 @@ const Main = () => {
       <main className={styles.main}>
         <h1>
           <span>ola!</span> Sou Arthur Souza <span>Desenvolvedor Frontend</span>{" "}
-          baseado em desafios!
+          movido por desafios!
         </h1>
         <Redes />
         <p>
-          Entre em contato comigo estou disponível para novos trabalhos e
-          projetos que impulsionem a inovação e a eficiência.
+          Entre em contato comigo, estou disponível para novas oportunidades que
+          impulsionem a inovação e eficiência
         </p>
-
         <ButtonAnimation />
       </main>
     </>
